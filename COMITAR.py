@@ -1,7 +1,11 @@
 import subprocess
 
 def automaticCommit():
+    # Fetch changes from the remote repository
+    subprocess.run(["git", "fetch"])
 
+    # Merge changes from the remote into your local branch
+    subprocess.run(["git", "merge", "origin/master"])
 
     subprocess.run(["git", "add", "."])
 
@@ -13,4 +17,4 @@ def automaticCommit():
     print("Commit realizado com sucesso!!")
 
 if __name__ == "__main__":
- automaticCommit()
+    automaticCommit()
