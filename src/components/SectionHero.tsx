@@ -1,3 +1,3 @@
 export function SectionHero() {
-  return <section>teste</section>
+  return <section>tesasdasdte</section>
 }
