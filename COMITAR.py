@@ -3,7 +3,7 @@ import subprocess
 def automaticCommit():
     subprocess.run(["git", "add", "."])
 
-    commit_message = "Teste"
+    commit_message = "finalizando navbar"
     subprocess.run(["git", "commit", "-m", commit_message])
 
     subprocess.run(["git", "push", "origin", "master"])
